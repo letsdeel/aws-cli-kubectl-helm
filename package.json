@@ -1,0 +1,21 @@
+{
+    "name": "aws-cli-kubectl-helm",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "docker build -t letsdeel/aws-cli-kubectl-helm:latest .",
+        "push": "docker push letsdeel/aws-cli-kubectl-helm:latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/letsdeel/aws-cli-kubectl-helm.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/letsdeel/aws-cli-kubectl-helm/issues"
+    },
+    "homepage": "https://github.com/letsdeel/aws-cli-kubectl-helm#readme"
+}
