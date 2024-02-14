@@ -1,0 +1,13 @@
+FROM --platform=linux/amd64 alpine:latest
+
+RUN sed -i 's/https/http/g' /etc/apk/repositories
+RUN apk add --upgrade --no-cache \
+  gzip \
+  tar \
+  curl \
+  bash \
+  jq \
+  aws-cli \
+  helm \
+  kubectl
+RUN sed -i 's/http/https/g' /etc/apk/repositories
